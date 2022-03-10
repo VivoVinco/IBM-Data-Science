@@ -1,0 +1,28 @@
+The languages of Data Science For anyone just getting started on their data
+science journey, the range of technical options can be overwhelming. There is a dizzying amount
+of choice when it comes to programming languages. Each has it's own strengths and weaknesses
+and there is no one right answer to the question of which one you should learn first. The answer
+to that question depends largely on your needs, the problems you are trying to solve, and
+who you are solving them for. Python, R, and SQL are the languages that
+we recommend you consider first and foremost. But there are so many others that have their
+own strengths and features. Scala, Java, C++, and Julia are some of the
+most popular. Javascript, PHP, Go, Ruby, and Visual Basic
+all have their own unique use cases as well. The language you choose to learn will depend
+on the things you need to accomplish and the problems you need to solve. It will also depend
+on what company you work for, what role you have, and the age of your existing application.
+We’ll explore the answers to this question as we dive into the popular languages in the
+data science industry. There are many roles available for people
+who are interested in getting involved in data science.
+Business Analyst Database Engineer
+Data Analyst Data Engineer
+Data Scientist Research Scientist
+Software Engineer Statistician
+Product Manager Project Manager
+and many more. Let’s dive into what we will learn in Lesson
+1. We will put most of our focus on the top three Data Science languages: Python, R, and
+SQL, which each have their own lessons. Then we will go on to highlight other noteworthy
+languages and what makes them special. Then we’ll finish with a short quiz to test your
+knowledge! ● 1.1.1 - Python
+● 1.1.2 - R ● 1.1.3 - SQL
+● 1.1.4 - Other Noteworthy Data Science Languages
+● 1.1.5 - Practice Quiz
