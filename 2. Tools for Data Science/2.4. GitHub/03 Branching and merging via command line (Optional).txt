@@ -1,0 +1,31 @@
+Welcome back to the second part of my little
+GitHub for Dummies series. One thing I forgot on the last video is how
+to sync if someone else has made a change. Okay. Let's consider this repository here, we have
+nothing inside; so this is actually the remote repository here on GitHub. So, we will again create a little README file,
+add "README: and then we say "git add" and then we say "git commit" "blahblah" and then
+"git push". Then we have the README file here, and now
+let's create a new file in the remote repository that's something which will happen also if
+someone else pushes something to that repository. You will see a new file... and this is now
+only in the remote repository and not in my Local (repository). You see here, there's only the README and
+not the new file. To obtain this new file, you say just "git
+pull" and then you see here the new file is also here. And yeah, that's basically it. And then interestingly let's say you are,
+for example, working on a huge sub-project in the repository and you don't want to interfere
+with the main work going on. The main work is basically called a branch,
+which is "master" You can create your own branch. So you can say, "Git branch mybranch" for
+example. So, then you say "git status" we still see
+that we are here on the master branch. Now we say "git checkout mybranch" and now,
+see, we are switched to my branch. and now we say "git status" and you also see here
+we are on mybranch. Now what I do is... here we have those two
+files, and we say "# stuff on branch" here and we say "stuffonbranch.txt" so "git add
+stuffonbranch.txt" then "git commit" and "bla" and "git push" Ah yeah, we have to also create this branch
+remotely. So, and now we push it to a remote branch. Now we can actually see that mybranch has
+been created here and you see here the file stuff on branch which is not on the master. So, what we do now here is we switch back
+to the main branch. So that's "git checkout master" and then we
+say "git merge mybranch" So this has been automatically merged so you
+see here we have stuff on branch also in my local folder here. But we see here it is still not in the master,
+ok? So we say "git push" and if you now refresh
+you see stuff on branch. So what happened here is we have merged from
+the local branch repository into the local master repository and now we push the contents
+of the local master repository to the remote master repository, and that way we have merged
+branch back into the master branch. So, that is all for now here. In the next video, I will show you how to
+actually create pull requests and contribute to foreign repositories.
