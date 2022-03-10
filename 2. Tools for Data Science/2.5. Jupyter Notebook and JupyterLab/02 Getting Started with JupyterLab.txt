@@ -1,0 +1,44 @@
+So coming back here to the anaconda navigator,
+we can also launch here , jupyter lab. So this now looks a bit more complicated,
+but actually it isn’t because what you can see here is also a jupyter notebook. So you can always download such a jupyter
+notebook and import it into normal jupyter notebooks. Or you can also import it into for example,
+Watson studio or any other cloud hosted jupyter environment. So, they are all compatible and this is also
+pretty cool and what you can see here is that there are some more windows. So, you see here a little section so this
+is a file explorer, and then the other thing you see here, you have a number of so call
+kernel sessions. So, a kernel session is actually more or less
+attached to a jupyter notebook. So, this means a jupyter notebook is running
+in the kernel session and the kernel session is executing your actual code. So, you see here this jupyter notebook is
+of course rendered in my web browser and that’s communicating with that remote kernel. And the kernel is encapsulating the runtime
+environment, in this case, ordinary python interpreter. You can also shut down those and restart those,
+here you have some preferences and a list of the open tabs. So the things you can now for example, create
+a new terminal and you see here there is a second tab opening so you can mix and match
+jupyter notebooks and your terminals. And you can also drag and drop those around. So you can split and lets add another terminal
+for example, you can also put it here or here. So it’s a nice way to get and overview of
+your work. So, create a new python notebook here, and
+then lets put this here. Ok so you have now, two notebooks and two
+terminals open at the same time and yeah that’s, pretty cool and that’s basically it. So, now lets close all those. I’ve opened here a notebook from my applied
+AI course on coursera and you can see here we can execute shell command. So, whenever you see and exclamation mark
+you can directly execute shell commands, so lets do it here. So this is called a ‘pip install upgrade’
+and some packages here so some of those are already installed, but some are being collected. And that’s some sort of a best practice. I’m always doing at the beginning of each
+notebook I will have a pip install, which make sure that I’m always on the correct
+versions of the dependent software packages. So you see here the star, star means that
+the current cell is just actually executed and once the execution finished, you will
+see a number. And a number is a task ID and that’s a incrementing
+number. Based on the number you know in which order
+you have executed the cells. You also see here, that the jupyter notebook
+is actually running. Now its done, so we see here one and what
+I always do as well is I’m checking on the correct versions installed. So you see here, I’m checking for tensorflow
+one fourteen and keras 225. And if that’s not the case I’m raising
+an exception, so don’t worry about the warnings we are officially on tensorflow 2.x. So I need to upgrade this notebook soon anyway. In case you have a long running task and its
+just not stopping, you can always restart the kernel. So lets do this here, and I’m saying often
+restart the kernel and clear all output because, once the output is gone I’m really seeing
+that the kernel has been restarted. So you see here, all your output is gone and
+that means you have actually shut down the python interpreter and created a new python
+interpreter in the background here. Another thing which maybe is interesting,
+lets actually, lets create a new notebook. So you have here, your output one. You can always say, ‘ collapse all code’
+or ‘collapse all output’. And reopen a different cells, that way you
+can improve visibility of the relevant content. That’s basically it. So there are more things to explore, but I
+think that knowledge, you can survive. And I think I’ve covered around 80% of what’s
+important. Maybe one final thing, so you export this
+notebook into various formats and lets try the ‘reveal.js’ slides. Open it in Firefox immediately, and 
+you see here that’s now a reveal.js presentation.
