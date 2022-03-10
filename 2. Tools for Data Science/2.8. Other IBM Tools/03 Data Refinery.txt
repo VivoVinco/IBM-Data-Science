@@ -1,0 +1,51 @@
+Hi, I'm Sonali Surange Dev. Data
+scientists often end up spending a lot of time doing mundane tasks like
+cleansing, shaping and preparing data. Typically these tasks are roadblocks for
+starting the more enjoyable part of analyzing the data sets or building and
+training machine learning models. This is because data sets typically are not in a
+format that can be readily used. They first need to be cleansed, refined before
+they are useable by a data scientist. IBM Data Refinery addresses this issue and
+simplifies the task of refining data and its workflows. It provides a self-service
+data preparation environment where you can quickly analyze, cleanse and prepare
+data sets. Data refinery is available with Watson Studio on public cloud, private
+cloud and desktop. In the rest of the video we will walk through a scenario
+and see Data Refinery in action. In this scenario we will use Data Refinery to
+find the best deals using data about discounts offered
+over time. We will then automate the analysis to run on a regular schedule. Before the Data Scientist starts, she looks
+at the data distribution and notices that the inSale column
+is missing data. She visualizes the offer column and
+notices that it contains valuable information about discounts. Many fields contain the percent of
+information, some contain references to previous
+price indicating a new reduced price being available. She decides to derive sale from offer. She uses a conditional decrease
+operation to derive if the product is on sale. Next she uses a filter operation to eliminate deals
+that are not on sale She then wants to pick up the bargains. She uses the
+replace substring operation and provides a pattern that extracts the
+discounts from the offer. After converting the discount values to a
+decimal she can visually see the discounts that
+were available. She needs to find the months that offered the best deals. She
+visualizes the dateUpdated and notices that the date field has a variety of
+formats, some with dashes some with slashes and some with months as text. She
+hopes that Data Refinery can normalize the data and extract a month. She uses the
+convert column operation to convert to date and selects ymd. Next she extracts
+month and creates a derived column called discountMonth. The data now
+represents all brands and products providing sales and the month the offer
+was available. The data scientist is only interested in her preferred brands. Over
+time she has built a list of preferred brands and has imported the data in her
+project. Data Refinery provides relational transformations such as left, inner
+right, full, semi and anti-join. To ensure that the data only contains her
+preferred brand she uses a semi-join operation which narrows the brands to
+match her preferences. She then selects the keys for the join
+and the resulting fields. The visual results now confirms that the
+brands match the preferences. To find the best possible deals
+she needs to perform some aggregations. Several features determine a good deal. She is interested in the best offer and duration when the discounts are active. Aggregating the sale data will help understand the deals. She groups the
+columns by brand and discountMonth and calculates the maximum discount. Finally
+she sorts the result in descending order Data refinery is now displaying the
+best deals by brand preferences and the duration which the offer is available. The last step is to execute the analysis
+on the full dataset. She starts the full analysis, which she can monitor for the
+completion status. It's time to automate the analysis which
+runs on a regular basis. The data in the database can grow over time. She uses a
+personalized runtime to match the larger data volumes and sets a schedule for
+automation. The hourly schedule reads from updated data from the database and
+writes to the target table. Data Refinery has helped her uncover deals
+in the raw data through a small set of operations and transformations with the
+bulk of the work done for her. Thank you for watching

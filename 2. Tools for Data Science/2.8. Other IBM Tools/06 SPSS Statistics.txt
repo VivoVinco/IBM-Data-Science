@@ -1,0 +1,76 @@
+IBM SPSS Statistics evolved from an original
+product that was released in 1968. That product was called “Statistical Package for Social
+Sciences,” or “SPSS.” IBM SPSS Statistics is a statistical and machine
+learning software application and is widely used in academia, government agencies, and
+large enterprises. It’s used to build predictive models, perform statistical analysis of data,
+and conduct other analytic tasks. It has a visual interface, which enables users to leverage
+statistical and data mining algorithms without programming, although the interface is very
+different from Modeler. As you can see, the main section of the screen looks very much
+like a spreadsheet; it displays data and allows manual editing. This particular small data
+set, called “Employee Data”, was created some time ago and does not represent real
+people. It is shipped with the product for use in demos and tutorials. At the bottom of the screen, we can see two
+tabs: Data View and Variable View. In the Variable View, we can see and edit the information
+about all variables, including names, labels, data types, and measurement levels. We can
+also specify labels for values of categorical variables, and missing values. At the top of the data window is a menu. Under
+File, if you select “Import Data,” you will see a list of a wide variety of data
+formats that you can import. The product uses its own data file format with the extension
+“.sav” that saves all the information about the variables we just saw in Variable
+view. The menu enables importing from and exporting to many other formats. Under “Data,” you’ll find an extensive
+menu of possible data operations. Note that Data Validation can be performed using user-defined
+rules that specify the expected behavior of variable values. For example, if the date
+and month are kept in separate columns, the date cannot exceed “31,” but for February,
+the date can’t exceed “29.” A special rule can therefore be created and applied
+during data validation. Additionally, you can enable some checks, such as percentage
+of missing values in a record or in the field. When you click the “Transform” menu item,
+you’ll find a variety of available data transformations.
+Under “Compute Variable…” you can write a formula for a new variable based on existing
+variables. You can use any of the many mathematical and statistical functions available in the
+product. You also have the option to use automatic
+data preparation, similar to Modeler. In the “Analyze” menu, you will see many
+types of statistical and machine learning analysis. Under “Regression,” there are
+a variety of regression-related models. There are other kinds of regressions that appear
+separately on the Analyze menu, including General Linear Model, Generalized Linear Models,
+Mixed Models, and Loglinear. Now let’s build a decision-tree model on
+the data. For this exercise we’ll try to predict the "Employment category" field based
+on other fields. In the “Analyze” menu, select “Classify” and then “Tree”.
+<Click> In the Decision Tree window, we can specify the dependent variable “Employment
+Category,” and use most other fields -- except id and bdate -- as predictors, or independent
+variables. Usually the ID variable should not be used as a predictor, because it will
+not help with new cases, and the birthdate does not seem to be a useful predictor in
+this example either. We’ll select “Exhaustive CHAID” as our Growing Method, although there
+are also three other options available. Data scientists often try many different models
+to see which one works best for their data. Here we are just looking at one example model
+in order to illustrate how the product works. Click the “Validation” button to open
+the Decision Tree Validation window. Here, we select “Split-sample validation” to
+make sure we test the model on new data. Click “OK” in the Decision Tree window, to <Click>
+generate the output, including the tree diagram shown here. <Click> A Classification table
+is also displayed that shows how well the model works on training and test data. In
+this case, the accuracy is 91.2% on training data and only 85.6% on test data, which means
+the model does not generalize to new data very well. It’s possible that by using different
+models, we can get better results. Let’s move to the next menu item. When you
+click “Graphs,” you’ll open a versatile Chart Builder, in addition to several other
+options. The Chart Builder enables us to choose a style
+from the gallery and to drag required fields onto the canvas, select colors, and choose
+from other options. Here’s an example after we drag the “Previous
+Experience,” “Current Salary,” and Gender variables to the corresponding slots to define
+the axis and colors for the dots on the chart. The plot in the canvas is not based on real
+data, this example simply gives you an idea of what to expect. Here is the real plot obtained from the data
+that we’ve been using. It shows different colored dots for gender, and regression lines
+that show the relationship of the current salary to previous experience for each gender. Throughout IBM SPSS Statistics, you’ll see
+a “Paste” button. When you click the “Paste” button, instead of executing the task right
+away the application will open another window, called the Syntax editor. Here, you can see
+the code called “syntax” pasted for you. SPSS syntax is a special programming language. For example, here is the code for the decision
+tree we just built. Once we have the syntax, we can execute it, manually edit it, store
+it for later use, or send it to other users of IBM SPSS Statistics. Experienced SPSS users
+can write the code from scratch, while others might prefer to have it generated by the graphical
+interface. Remember, the option to paste syntax is available in throughout the program.
+If the syntax is generated by all the steps in a data analytics process -- opening the
+data set, applying any data transformations, building models -- and then saved as a syntax
+file with the extension “.sps”, it’s similar to saving a stream in IBM SPSS Modeler.
+However, one important difference is that it does not allow for an easy way of scoring
+new records with the model. We’ll talk about different ways to deploy models in the next
+section. You’ve learned how IBM SPSS Statistics helps
+data scientists to analyze their data using many statistical and machine learning techniques.
+Using a graphical user interface, we can create complicated analysis that can be saved in
+the form of syntax and reused later. Next, we will talk about predictive model
+deployment, an important part of the overall data science lifecycle.

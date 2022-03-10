@@ -1,0 +1,41 @@
+So far, we’ve talked about building machine
+learning models and pipelines. In most practical applications, the return on investment is
+obtained when the model or pipeline is put into production, where it is used to get predictions,
+or scores, for the new cases. Let’s look back at our overview of different
+tool categories. In this unit, Model Deployment is our focus. Suppose you worked hard to create the best
+possible machine learning model and the data preparation pipeline for it. How will you
+deploy your models? In many practical scenarios, models are built
+and deployed by different teams, using different programming, and perhaps human languages.
+The teams will use different computing and data storage environments, and It might prove
+difficult to translate your program and the associated data preparation and post-processing
+steps from one environment to the other. Currently there are several approaches you
+can use to solve this problem, some commercial, some open source. Yet each one typically supports
+only a subset of all possible models, from building them to deploying, so a user gets
+locked into a specific framework. Open standards for model deployment are designed
+to support model exchange between a wider variety of proprietary and open source models.
+Predictive Model Markup Language, or “PMML,” was the first such standard, based on XML. It was created in the 1990s by the Data Mining
+Group, a group of companies working together on the open standards for predictive model
+deployment. IBM and SPSS were among the founding members of the Data Mining Group. PMML 4.4 was recently released. It includes 17 statistical and machine learning
+models and many data transformations, built-in functions, ways to combine multiple models
+together, and other features. This standard is widely known and used. The products we
+looked at earlier -- Watson Studio, IBM SPSS Statistics, IBM SPSS Modeler -- enable users
+to export most models in PMML. In 2013, a demand for a new standard grew,
+one that did not describe models and their features, but rather the scoring procedure
+directly, and one that was based on JSON rather than XML. This led to the creation of Portable
+Format for Analytics, or PFA. PFA is now used by a number of companies and open source packages. After 2012, deep learning models became widely
+popular. Yet PMML and PFA did not react quickly enough to their proliferation. The need for
+a standard intermediate representation was amplified by the wide variety of emerging
+deep learning frameworks and specialized hardware. In 2017, Microsoft and Facebook created and
+open-sourced Open Neural Network Exchange , or “ONNX.” Originally created for neural
+networks, this format was later extended to support “traditional machine learning”
+as well. There are currently many companies working
+together to further develop and expand ONNX, and a wide range of products and open source
+packages are adding support for it. Watson Machine Learning is IBM’s commercial
+offering designed for model deployment. It supports deployment of models built with most
+open source packages, as well as those expressed in PMML or ONNX. It also supports deployment
+of IBM SPSS Modeler streams and Modeler flows from Watson Studio. Deployment can be done
+using a graphical interface or Python code, and can be for online scoring through a REST
+API or batch scoring. Watson Machine Learning helps integrate a
+deployed model into applications in the form of code snippets in several programming languages. In this video, you’ve learned how open standards
+and Watson Machine Learning can help users to deploy their models into various application. Next we’ll talk about AutoAI and OpenScale,
+two advanced Watson Studio features that help to further simplify a data scientist’s work.

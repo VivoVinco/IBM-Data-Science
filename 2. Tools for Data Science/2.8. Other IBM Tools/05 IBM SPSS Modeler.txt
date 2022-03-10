@@ -1,0 +1,77 @@
+In this lesson we will discuss two
+products that are very helpful for data scientists. Both came to IBM with the
+SPSS acquisition in 2009. First is IBM SPSS Modeler. Let's review the different
+tool categories we discussed previously. IBM SPSS Modeler includes data
+management capabilities and tools for data preparation, visualization, model
+building and model deployment. The product was created by Integral
+Solutions Limited in the United Kingdom in 1994 and was originally called
+Clementine. It was acquired by a company called SPSS in 1998 and SPSS was in turn
+acquired by IBM in 2009. SPSS Modeler is a data mining and text analytics
+software application. It's used to build predictive models and conduct other
+analytics tasks. It has a visual interface that enables users to leverage
+statistical and data mining algorithms without programming. One of its main
+goals from the beginning was to create complex predictive modeling pipelines
+that are easily accessible. A sample modeler stream shown here includes one
+round data source node, three triangular graph nodes, one hexagonal node for
+computing, a new variable, and a square node for an output table. Below the
+canvas, we can see the rich node palette with separate tabs for data sources,
+record in field operations, graphs, models, output and so on. Nodes and different tabs have different shapes with Pentagon's used for modeling
+nodes. Let's examine the sample stream that comes as an example with the
+product. It starts with a data set of telecommunications records and the goal
+is to build a model to predict which customers are about to leave the service
+otherwise known as churn. The data source is shown by the round node on the left
+side, a hexagon type node typically follows a
+data source node and it enables us to specify roles, target predictor or none.
+And measurement levels such as continuous nominal or flag for all
+variables. The term flag is used to denote a variable with two categories
+one of which can be considered positive and the other negative. In this example
+the measurement level for the churn field is set to flag and the role is set
+to target. All others are set as predictors and inputs. The original
+data set has many fields and some of them are not relevant to the target variable,
+so we first need to decide which fields are more useful as predictors. There is a
+feature selection modeling node that helps to do this. After the stream with
+the feature selection node is executed a yellow model nugget gets created below
+it in the flow diagram.Using that nugget we can generate a filter node that
+filters out the variables that are not good predictors for the target. The data
+audit node located below the filtering node shows various properties of the
+data such as numbers of outliers in each variable and the percentage of valid
+values. It can also help to create a special node for missing value
+imputation that is replacing missing values of a variable with some valid
+values that can be selected based on domain knowledge. Here variable log toll
+has greater than 50% missing values and we will specify a value the mean to
+replace them. A super node in modeler is a special node that is not found in the
+palette but is created by the user with special functions included in it. The
+data audit node enables us to create a super node for imputing missing values. It is shaped as a star and shown on the right of the screen.
+Finally we attach the logistic regression model node to the stream and
+click run. Another model nugget appears and by clicking it we can see various
+model information and other output. in the output window that opens when we
+click on the model nugget the summary tab shows the target inputs and some
+model building settings. Based on certain advanced output settings that were
+specified before the model was built we can also see a classification table,
+accuracy, and some other generated outputs for the model. Note that these
+results are based on training data only. To assess how well the model generates
+two other real-world data you should always use a partition node to hold out
+a subset of records for the purposes of testing and validation. Then, in the model
+setup screen select the use partitioned data check box. This will help detect and avoid model overfitting. Overfitting is defined as
+having significantly higher accuracy on the training data. Data used for training
+the model then on tests or unseen data. The yellow model nugget added earlier
+can also be used to compute predictions, also called scores on the original data
+or on a new data source. All we need to do is to connect the data source in
+question to the nugget, make sure it has the predictor variables used in the
+model, and create an output to a table or other structure for storing the scores.
+We can also specify settings for scoring inside the model nugget. Note that if the
+model was built on transformed predictor data, the same data transformation steps
+would be applied to the new data before it can be scored by the model. The
+analysis node is the final node in the stream. It attaches to a model nugget and
+when executed it will compute some model evaluation metrics, auch as a confusion
+matrix and accuracy. In this example we've only looked at a logistic
+regression model. IBM SPSS Modeler offers a rich modeling palette that includes
+many classification, regression clustering, Association rules and other
+models. It also contains large selections of data source types, data
+transformations, graphs, and output notes. And we haven't even
+talked about text analytics, entity resolution and many other features of
+the product that can be extremely helpful to data scientists. We could
+create an entire course on IBM SPSS Modeler alone. You've learned how IBM
+SPSS Modeler helps analysts to create powerful machine learning pipelines
+using graphical interface. Next, we will talk about the original SPSS product now
+called IBM SPSS Statistics.

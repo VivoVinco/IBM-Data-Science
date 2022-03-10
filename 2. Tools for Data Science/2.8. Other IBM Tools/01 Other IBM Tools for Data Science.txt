@@ -1,0 +1,13 @@
+In this video, we will look at several other IBM tools that help data scientists in
+their day to day work. Watson Knowledge Catalog
+helps data scientists to catalog and manage all
+their data resources. Data refinery provides
+graphical tools for analyzing and preparing data. SPSS based products include easy to use graphical
+interfaces for wide varieties of statistical and machine
+learning algorithms and data transformations. We will talk about approaches
+to model deployment, including open standards and
+Watson Machine Learning. Newer features of
+Watson Studio include AutoAI that
+automatically computes the best data pipeline and Watson OpenScale
+which helps to ensure fairness and explainability
+of the models.

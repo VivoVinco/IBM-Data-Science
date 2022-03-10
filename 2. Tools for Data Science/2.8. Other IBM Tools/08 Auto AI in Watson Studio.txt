@@ -1,0 +1,38 @@
+In earlier sections we saw how IBM SPSS Modeler
+and Watson Studio Modeler flows allow you to graphically create a stream or flow that
+includes data transformation steps and machine learning models. Such sequences of steps are called data pipelines
+or ML pipelines. This section examines a feature of Watson
+Studio that helps to automate the creation of machine learning pipelines. This allows data scientists to produce results
+much faster and to focus on more creative work. There is currently a shortage of qualified
+data scientists. Many operations that a data scientist typically
+performs are repetitive and time-consuming. Therefore, automating some of that repetitive
+work will help free up both new and experienced data scientists to do the important work that
+they are trained to do. The AutoAI system was developed by IBM Research
+experts in collaboration with IBM Distinguished Engineer and two-time Kaggle Grandmaster Jean-Francois
+Puget. It provides a graphical interface to create
+and deploy machine learning models with real time visualizations. AutoAI automatically performs typical machine
+learning steps, such as: Data preparation
+Model selection Feature engineering
+Hyper-parameter optimization Users can view the progress on the graphical
+interface. This example shows the training of a model
+to predict whether or not a customer is likely to buy a tent from an outdoor equipment store. We start with structured data. In this historical data, there are four feature,
+or “predictor,” columns: GENDER: The customer’s gender
+AGE: The customer’s age MARITAL_STATUS: “Married”, “Single”,
+or “Unspecified” and
+PROFESSION: The general category of the customer’s profession, such “Hospitality” or “Sales”,
+or simply “Other.” The model will learn to predict the value
+for the IS_TENT column; that is, whether or not the customer bought a tent. After we choose IS_TENT as the column to predict,
+AutoAI analyzes the data and determines that the IS_TENT column contains True/False information,
+making this data suitable for a binary classification model. The default metric for a binary classification
+is ROC/AUC. After we click Run experiment, an infographic
+shows the process of building the pipelines as the model trains. Once the pipeline creation is complete, we
+can view and compare the ranked pipelines in a leaderboard. The pipelines for the sample binary classification
+model are quite uniform because of the underlying sample data. To see pipelines in action, re-run the experiment
+as a regression experiment to predict purchase amount. That experiment gives better variation in
+the resulting pipelines. After clicking “Pipeline comparison,”
+we can see how the pipelines differ on various measures of model quality. The pipelines can be saved as Machine Learning
+assets in the Watson Studio project. Then they can be deployed and tested. Currently AutoAI is available only for classification
+and regression models; there is a plan to add time series model support in the future. In this unit, you have learned how AutoAI
+automates typical data science tasks and helps get better performing data pipelines more
+quickly, while also simplifying pipeline deployment into production in Watson Machine Learning. In the next section, we will discuss Watson
+OpenScale, which helps to ensure that your models are fair, explainable, and up to date.
