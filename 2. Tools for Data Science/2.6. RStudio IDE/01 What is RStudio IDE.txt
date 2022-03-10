@@ -1,0 +1,47 @@
+So now let's have
+a look at RStudio. RStudio is IDE, Integrated
+Development Environment, and it's made for the
+programming language R. R is a statistical programming
+language which has been derived from the closed
+source S language. So R is open source, RStudio is open source, and it's completely for free. The central data structure
+in R is a DataFrame. So we have here a
+window which contains an editor and below we have here a window which
+contains the console. The R interpreter is the
+interactive interpreter. So you have access to the
+interpreter here at anytime, but it's handy if you
+have a text editor here. You can always execute the code you're writing
+here in this text editor. On the top right, you have a narrow window where your environment
+is displayed, so every variable on the heap is accessible and
+you can also inspect it. If you plot graphs, they are ending up here. So let's start with a DataFrame. So in order to find
+out where we are, we say, "Getwd," so
+get working directory. So we are in the "Home"
+folder. That's pretty cool. So now we say, DataFrame equals. You might have seen this
+symbol here, so that's legacy. There's only a slight
+difference in function codes, so don't worry about it unless you're using
+it in function codes. So you can use the normal
+ordinary assignment operator, which makes our looking
+a bit less ugly. So we say now read.csv
+and now we can say, "Go to my Downloads folder". In here we see all
+the possible files. So I know it started with CU, so it's customer messages. We hit Enter, we can
+execute this line. Then this line gets copied to the console and gets executed. At the same time, you
+see here DataFrame is basically containing
+the data from that CSV, and we can now have a look at the contents of this DataFrame. If we say, "View(df)", you see here it's already shown
+inside the editor window. What we notice is that the first line has been
+interpreted as header. That's something we don't want. So we can say, "Header FALSE". It's very handy that you
+have autocompletion here as you always know what
+parameters a function has. If you now have a look
+at DataFrame again, you see here the first line is now part of the data
+and not the header. So that's how you can load data. You can, of course, also load data from
+remote database systems. You can use ODBC for that, but that's beyond the
+scope of this tutorial. What I want to show you is
+another way of importing data, you can say here,
+"Import from CSV" and then the code is
+actually created for you. So let's open the file again. It's basically doing the same, just that you have an idea. You have a data preview
+with the same problem that you have the first
+line interpreted as header. So you can actually uncheck this one here and then
+it's as it should be, and you say, "Import". You notice here you
+have a second object here on the heap which is
+called customer messages. It's also DataFrame and
+it's also shown here. That concludes the first video. In the next video, I will show you how to
+work with libraries, and then after that I will
+show you how to create plots.

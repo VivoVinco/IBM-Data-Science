@@ -1,0 +1,21 @@
+One of the main strengths of R is not very
+nice looking syntax of course, it’s the abundance of packages. So if you go to cran.r-project.org, this is
+The Comprehensive R Archive Network. You have a link here for packages and you
+see here table of available packages. You can also sort by date or name, so you
+get around 15,349 packages. And that’s a lot so I’m audio guy. So lets have a look over here for audio. So there’s and audio package. If you want to install such a package in R,
+its pretty straightforward. What you need to do is you say, ‘install.packages’
+and then you say the name of the package, ‘audio’ and then you just execute. It asks me whether I want to compile it from
+source, this is fine. So a lot of the R packages are written C or
+C++ so you need to have a C compiler installed, and then the package is compiled on your machine
+for you. So this is done, in order to use the package
+you need to load it. Say library or you can also say require, it
+doesn’t matter and then you say audio. So now the package is loaded and you see that
+also here, that the audio package is now loaded. And now you can use it. So, if you want to have a look at the source
+code or some examples, you can just drill down from the R archive. So I’m going here to this URL, and you see
+here it’s a little example. So this should play a sine wave, lets actually
+have a look whether I can connect to my microphone with my speaker. If that works, ok can you hear that? Ok so that is an example how easy it is to
+install and use packages in R. And the problem is not that you wont find a package for a
+specific task, the problem is more that you have five or ten different packages for a
+specific task. And you need to read a lot and decide which
+one you are using. So in the next video I will, how to plot in
+R studio usning ggplot.
