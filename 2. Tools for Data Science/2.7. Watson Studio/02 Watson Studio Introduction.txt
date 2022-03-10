@@ -1,0 +1,48 @@
+Watson Studio is an integrated
+platform of tools services and data that helps companies accelerate their shift
+to become data-driven organizations you can start with a free account to explore
+its capabilities data science is a team sport we have different types of people
+interested in the insights that data science can provide this includes
+business analysts data engineers data stewards data scientist and developers
+data needs to be located in cleanse models have to be created tested
+monitored and updated all this requires teamwork
+for this reason watson city was built as a collaborative platform a community of
+like-minded people there is a lot to cover in this introduction and will only
+scratch the surface you can find more information on the digital technical
+engagement site at ibm.com slash demos once you are logged in you may see the
+get started welcome screen you can minimize the screen by clicking on the
+get started button in the upper right one important item that is easy to miss
+is the hamburger button in the upper left it gives you direct access to
+projects catalogs and services among other things the gallery is particularly
+interesting it is a collection of assets including tutorials notebooks datasets
+articles and papers from multiple sources new assets are constantly added
+assets can be searched using filters for Thai language technology topics and so
+on the results can be sorted by features or by date manage gives you quick access
+to specific areas to manage finally we have integrated support and
+documentation in the Watson environment as mentioned earlier the project is the
+center of the collaboration it is very simple to create a project you click
+create a project in the welcome screen or new project
+and either create an empty project or one from an existing one then you give
+it a name possibly add a description and you're ready to go at the project level
+we also have a menu of options it starts with the overview where you can see
+basic information on the project this tab also includes a readme section where
+you can get more details on what the project is about the next one is assets
+where you can see the data assets models notebooks and other assets that are part
+of the project you can go to add specific assets using the add to project
+drop down menu at the top of the screen we won't go into all of those menu items
+but one important want to know is connection this allows you to access
+data that comes from outside Watson studio as you can see it includes a lot
+of data services from IBM but also quite a few from third parties such as Amazon
+and Microsoft going back to our project I'd like to point out the environment
+section one important tool for that exploration data manipulation and model
+creation is the notebook depending on the amount of work that needs to be done
+we have a choice of resource allocation we can also tailor the environment to
+include additional libraries so we have a complete environment from the start I
+want to point out two more selections from the top menu access control and
+settings the access control allows you to control collaborators and their
+permissions and more in the settings section you can among other things add
+services for example you click on the add service drop-down menu select Watson
+and add a machine-learning service you have the choice to add an existing
+service you may have created earlier in another project or create a new one note
+that most services include a light free version this means that you can
+experiment with all sorts of capabilities for free you

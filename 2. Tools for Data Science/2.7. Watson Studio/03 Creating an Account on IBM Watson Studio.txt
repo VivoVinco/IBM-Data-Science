@@ -1,0 +1,23 @@
+This video shows you how to try out IBM
+Watson for free. IBM Watson gives you access to IBM
+Watson Studio, IBM Watson Knowledge Catalog, the data refinery, machine and
+deep learning, visual recognition models, dashboards and streams flows. At https://dataplatform.cloud.ibm.com/ you can sign up for a free trial.  When
+you sign up for an IBM Watson account you are automatically signed up for a
+free IBM Cloud account. Here you see the Watson applications that will be
+provisioned. IBM Watson Studio and IBM Watson Knowledge Catalog.
+If you already have an IBM cloud account then use your IBM ID to sign up for IBM Watson. Otherwise, type your email address which
+will be used to create an IBM cloud account for you.
+On the next screen you are redirected to the IBM cloud registration page where
+you need to provide the typical basic information for an account then click
+create account. Now check your email and confirm your
+account. Now that you've registered for IBM cloud
+you can use those same credentials to sign-in.
+Next you'll see the process create the IBM Watson user account using your IBM
+cloud credentials and finally you'll see that your account was successfully
+created. This IBM account has only one Associated IBM cloud account and one resource group. If you have more than one associated
+account or one account with multiple resource groups then during the Watson
+Studio account setup you'll see this screen giving you the option to select
+an account and resource group to use. IBM Cloud uses resource groups as a way for you to organize your account resources in customizable groupings so that you
+can quickly assign users access to more than one resource at a time.
+View the settings to verify the applications and services that are
+provisioned. Now you're ready to start working in IBM Watson.
